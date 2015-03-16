@@ -1,15 +1,15 @@
-name := "play-mailer"
-    
+name := "play-mailer22"
+
 organization := "com.typesafe.play"
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.10.5"
 
-crossScalaVersions := Seq("2.11.1", "2.10.4")
+// crossScalaVersions := Seq("2.11.1", "2.10.4")
 
 resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
 libraryDependencies ++= Seq(
-  "com.typesafe.play" %% "play" % "2.3.6" % "provided",
+  "com.typesafe.play" %% "play" % "2.2.6" % "provided",
   "org.apache.commons" % "commons-email" % "1.3.3",
   "org.specs2" %% "specs2-core" % "2.4.9" % "test"
 )
@@ -48,7 +48,7 @@ pomIncludeRepository := { _ => false }
 releaseSettings
 
 ReleaseKeys.publishArtifactsAction := PgpKeys.publishSigned.value
-    
+
 ReleaseKeys.crossBuild := true
 
 ReleaseKeys.tagName := (version in ThisBuild).value
