@@ -1,8 +1,8 @@
 name := "play-mailer22"
 
-organization := "mr"
+organization := "au.com.mediaroom"
 
-scalaVersion := "2.10.5"
+scalaVersion := "2.10.6"
 
 // crossScalaVersions := Seq("2.11.1", "2.10.4")
 
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.specs2" %% "specs2-core" % "2.4.9" % "test"
 )
 
-javacOptions ++= Seq("-source", "1.6", "-target", "1.6", "-Xlint:unchecked", "-encoding", "UTF-8")
+javacOptions ++= Seq("-source", "1.7", "-target", "1.7", "-Xlint:unchecked", "-encoding", "UTF-8")
 
 scalacOptions += "-deprecation"
 
